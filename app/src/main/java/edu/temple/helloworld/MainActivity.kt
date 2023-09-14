@@ -29,9 +29,10 @@ class MainActivity : AppCompatActivity() {
         // Respond to button click event per specifications
 
         myButton.setOnClickListener{
-            nameEditText.setText("dsf")
-            //var x : TextView = nameEditText
-            //displayTextView = x
+            var x : String = ""
+            x = nameEditText.toString()
+            displayTextView.setText(x)
+
         }
 
 
