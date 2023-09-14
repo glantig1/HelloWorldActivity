@@ -10,6 +10,7 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
 
     // Declare view properties - the first one is done for you
+    // I used the examplez given in the walkthrough to views
     lateinit var displayTextView: TextView
     lateinit var myButton: Button
     lateinit var nameEditText : EditText
@@ -23,9 +24,19 @@ class MainActivity : AppCompatActivity() {
         myButton = findViewById(R.id.clickMeButton)
         nameEditText = findViewById(R.id.nameEditText)
 
+
         
         // Respond to button click event per specifications
 
+        myButton.setOnClickListener{
+            nameEditText.setText("dsf")
+            //var x : TextView = nameEditText
+            //displayTextView = x
+        }
+
+
+
 
     }
+
 }
